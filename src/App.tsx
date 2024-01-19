@@ -90,7 +90,7 @@ const App = () => {
                         <h1 className="text-4xl py-2">ዲጂታል ፖስትካርድ ለወዳጆችዎ ይላኩ</h1>
                         <h1 className="text-xl ">Send an E-card for your beloved one!</h1>
                     </div>
-                    <div className="flex flex-col w-[80%]   max-w-[400px]  py-2">
+                    <div className="flex flex-col w-[80%] mb-36  max-w-[400px]  py-2">
                         {/* <h3 className="py-2 font-bold text-3xl"> ወዳጅ ዘመድዎን እንኳን አደረሰዎ ይበሉ!!</h3> */}
                         <form className="w-full max-w-[400px] flex flex-col gap-y-3">
                             <Input defaultValue={searchParams.get('from')!} className="bg-[#fc7405] font-medium" name="from" onChange={(e) => { console.log(e.target.value); handleFormState(e) }} type="text" label="Sender's Name (ከ . . .?)" />
@@ -105,7 +105,7 @@ const App = () => {
                         <h5 className="pt-4  text-xl">{gender === "female" ? "ተቀባይዋ " : "ተቀባዩ "} የእርሶ ምንድን {gender === "female" ? "ናት " : "ነው "}?</h5>
                         <h5 className="py-1  text-m">The Receiver is your . . .</h5>
 
-                        <div className=" max-w-[500px] grid mb-36 grid-cols-2 gap-3 ">
+                        <div className=" max-w-[500px] grid  grid-cols-2 gap-3 ">
                             <button className={`${gender === "male" ? "block" : "hidden"} px-4 py-2 rounded-md ${relation === "maCr" ? "bg-[#fc7405]  text-white" : "bg-gray-200 "}`} onClick={() => { setRelation("maCr"); handleUpdateUrl("maCr"); }}>
                                 የምወደው ልጅ 🥰
                             </button>
