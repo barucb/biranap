@@ -198,7 +198,7 @@ const App = () => {
                             {/* <span className="w-[80px] h-[80px] bg-yellow-400 absolute rounded-full -left-8" /> */}
                             {/* <span className="w-[80px] h-[80px] bg-[#fc7405] absolute rounded-full top-[30%] left-10" /> */}
                         </div>
-                        <div className="relative  bg-[#c9ff00] text-black  py-2 text-lg  space-y-3 p-2 border border- rounded-lg shadow-sm mt-4">
+                        <div className="relative  bg-gradient-to-l from-lime-500 to-yellow-400 text-black  py-2 text-lg  space-y-3 p-2 border border- rounded-lg shadow-sm mt-4">
                             <div className="flex justify-end text-3xl pr-5 pt-3 items-center gap-2">
                                 <strong className=" ">ለ:</strong>
                                 <div className="flex text-[#fc7405] flex-col">
