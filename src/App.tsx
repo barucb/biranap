@@ -216,7 +216,7 @@ const App = () => {
                                     {relation === "feFr" ? (<p className="text-center text-3xl -mb-16"> <br /> እንኳን ለብርሃነ ጥምቀቱ በሰላም አደረሰሽ {searchParams.get('to')}. መልካም በአል እንዲሆንልሽ ልባዊ ምኞቴ ነው፡፡<br /> <br /><br /> <br />  </p>) : ""}
                                     <div className="flex justify-center">
 
-                                        <img className="-mt-8 -mb-24 w-[50%]" src="./harmonica.png" alt="" />
+                                        <img className="-mt-8 -mb-24 w-[70%]" src="./harmonica.png" alt="" />
                                     </div>
 
 
