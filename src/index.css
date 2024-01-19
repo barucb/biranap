@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --bungee-spice: 'Bungee Spice', sans-serif;
+        --dm-sans: 'DM Sans', sans-serif;
+
+        --primary-green: 118, 44%, 50%;
+        --primary-red: 359, 84%, 53%;
+        --primary-white: 0, 0%, 100%;
+
+        --secondary-lg: 120, 44%, 42%;
+        --secondary-db: 0, 0%, 0%;
+        --secondary-red: 359, 77%, 39%;
+
+        --tertiary-lg: 145.4, 89%, 53.7%;
+        --tertiary-dg: 240, 0.5%, 38.2%;
+        --tertiary-lr: 349.8, 100%, 58.6%;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--dm-sans);
+}
+
+#big-text {
+    font-family: var(--bungee-spice);
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.31);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(6.9px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
