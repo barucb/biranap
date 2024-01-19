@@ -72,7 +72,7 @@ const App = () => {
 
     const handleCopyUrl = () => {
         navigator.clipboard.writeText(currentUrl);
-        toast.success(`ሊንኩ ኮፒ ተደርጓል::  ለ ${searchParams.get('to')} ይላኩትይላኩት`);
+        toast.success(`ሊንኩ ኮፒ ተደርጓል::  ለ ${searchParams.get('to')} ይላኩት`);
     };
 
     return (
