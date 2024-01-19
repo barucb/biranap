@@ -141,7 +141,7 @@ const App = () => {
                                     handleUpdateUrl("gf");
                                 }}
                             >
-                                ፍቅረኛ  ,👩🏻‍❤️‍👨🏻
+                                ፍቅረኛ  👩🏻‍❤️‍👨🏻
                             </button>
                             <button
                                 className={`${gender === "female" ? "block" : "hidden"} px-4 py-2 rounded-md ${relation === "feFr" ? "bg-[#fc7405]  text-white" : "bg-gray-200 "}`} onClick={() => {
@@ -198,7 +198,7 @@ const App = () => {
                             {/* <span className="w-[80px] h-[80px] bg-yellow-400 absolute rounded-full -left-8" /> */}
                             {/* <span className="w-[80px] h-[80px] bg-[#fc7405] absolute rounded-full top-[30%] left-10" /> */}
                         </div>
-                        <div className="relative   text-black  py-2 text-lg  space-y-3 p-2 border border- rounded-lg shadow-sm mt-4">
+                        <div className="relative  bg-[#c9ff00] text-black  py-2 text-lg  space-y-3 p-2 border border- rounded-lg shadow-sm mt-4">
                             <div className="flex justify-end text-3xl pr-5 pt-3 items-center gap-2">
                                 <strong className=" ">ለ:</strong>
                                 <div className="flex text-[#fc7405] flex-col">
@@ -241,7 +241,7 @@ const App = () => {
                             <Link href="/" className="text-xl w-16  flex justify-center m-2 h-16 w text-center text-black bg-[#fc7405] mr-6 rounded-lg px-1  max-w-[100px] mt-16 ">
                                 አዲስ ይዘዙ
                             </Link>
-                            <button className="bg-[#fc7405] w-1 flex justify-center m-2 h-16 items-center rounded-lg  px-1  max-w-[100px] mt-16" onClick={handleCopyUrl}>
+                            <button className="bg-[#fc7405] w-16 flex justify-center m-2 h-16 items-center rounded-lg  px-1  max-w-[100px] mt-16" onClick={handleCopyUrl}>
                                 <svg className="h-10 " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><circle cx="18" cy="5" r="3" /><circle cx="6" cy="12" r="3" /><circle cx="18" cy="19" r="3" /><line x1="8.59" x2="15.42" y1="13.51" y2="17.49" /><line x1="15.41" x2="8.59" y1="6.51" y2="10.49" /></svg>
                                 {/* <img className="h-  m-2" src={share} alt="Share" /> */}
 
