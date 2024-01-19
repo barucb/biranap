@@ -174,8 +174,11 @@ const App = () => {
             </div>
             <div id="preview" className={`${searchParams.get("postcard") === "true" ? "flex" : "hidden"} h-screen w-full flex-col items-center  py-2`}>
                 <Card className={`w-full max-w-[500px] h-full`}>
-                    <div className="flex justify-center h-14 relative bg-white w-full p-2 cursor-pointer">
-                        <img className="h-12 w-auto object-contain" src="./logo.png" alt="" />
+                    <div className="flex justify-center h-10 relative bg-white w-full p-2 cursor-pointer">
+                        <Link href="https://t.me/biranadigitals" >
+
+                            <img className="h-12 w-auto object-contain" src="./logo.png" alt="" />
+                        </Link>
                     </div>
                     <CardHeader className="flex justify-between gap-3">
                     </CardHeader>
@@ -188,6 +191,7 @@ const App = () => {
                             <img className="   absolute w-full -top-16 left-28" src="./lomimotion.png" alt="" />
                         }
                         <img className="opacity-80  object-contain absolute w-full " src="./lomiwrwera.png" alt="" /> */}
+                        {/* <img className="   absolute w-[60%] top-36 left-28" src="./harmonica.png" alt="" /> */}
 
                         <h1 id="big-text" className="text-2xl"> </h1>
                         <div>
@@ -196,21 +200,25 @@ const App = () => {
                             {/* <span className="w-[80px] h-[80px] bg-[#fc7405] absolute rounded-full top-[30%] left-10" /> */}
                         </div>
                         <div className="relative   text-black  py-2 text-lg  space-y-3 p-2 border border- rounded-lg shadow-sm mt-4">
-                            <div className="flex justify-end text-2xl items-center gap-2">
-                                <strong className=" opacity-70">ለ:</strong>
-                                <div className="flex flex-col">
-                                    <h1 className="text-lg font-bold"> <p className="text-2xl capitalize">{searchParams.get('to')}</p></h1>
+                            <div className="flex justify-end text-3xl pr-5 pt-3 items-center gap-2">
+                                <strong className=" ">ለ:</strong>
+                                <div className="flex text-[#fc7405] flex-col">
+                                    <h1 className="text-lg font-bold"> <p className="text-3xl capitalize">{searchParams.get('to')}</p></h1>
                                 </div>
                             </div>
                             <div className="relative  ">
                                 <br />
                                 <p className="font-bold text-2xl">
-                                    {relation === "maCr" ? (<p className="text-center">  <br />ለጥምቅት 'ማይሆነኝ ቀሚሴ ይበጣጠስ <br /> ፏ ብለን እንሂድ ከከተራው ድረስ 😆🥰</p>) : ""}
+                                    {relation === "maCr" ? (<p className="text-center ">  <br />ለጥምቀት 'ማይሆነኝ ቀሚሴ ይበጣጠስ <br /> ፏ ብለን እንሂድ ከከተራው ድረስ 😆🥰 </p>) : ""}
                                     {relation === "feCr" ? (<p className="text-center"><br />ባልመጣ እንኳን ካንቺ በአካል ባላገኝሽ <br /> ዲጂታሉን ሎሚ በስልኬ ላኩልሽ 😆🥰</p>) : ""}
-                                    {relation === "bf" ? (<p className="text-center"><br /> የጥምቀቱ 'ለታ ተውበህ ላግኝህ  <br />የልቤ ላይ ንጉስ ሰርክአዲስ ነው ፍቅርህ <br /></p>) : ""}
-                                    {relation === "gf" ? (<p className="text-center"> <br />የጥምቀቱ 'ለታ ነይልኝ ላግኝሽ   <br /> ሃገር ይወቅልኝ ንግስቴ እንደሆንሽ <br /> ደግሞ . . . <br /> ምንም ባትዘንጪም እንዲሁ ቆንጆ ነሽ  </p>) : ""}
-                                    {relation === "maFr" ? (<p className="text-center"> <br />እንኳን ለብርሃነ ጥምቀቱ በሰላም አደረሰህ {searchParams.get('from')}.  <br />መልካም በአል <br /><br /> <br />  </p>) : ""}
-                                    {relation === "feFr" ? (<p className="text-center"> <br /> እንኳን ለብርሃነ ጥምቀቱ በሰላም አደረሰሽ {searchParams.get('from')}.<br /> <br /><br /> <br />  </p>) : ""}
+                                    {relation === "bf" ? (<p className="text-center"> የጥምቀቱ 'ለታ ተውበህ ላግኝህ  <br />የልቤ ላይ ንጉስ ሰርክአዲስ ነው ፍቅርህ <br /></p>) : ""}
+                                    {relation === "gf" ? (<p className="text-center"> የጥምቀቱ 'ለታ ነይልኝ ላግኝሽ   <br /> ሃገር ይወቅልኝ ንግስቴ እንደሆንሽ <br /> ደግሞ . . . . .  <br /> ምንም ባትዘንጪም እንዲሁ ቆንጆ ነሽ  </p>) : ""}
+                                    {relation === "maFr" ? (<p className="text-center text-3xl -mb-16"> <br />እንኳን ለብርሃነ ጥምቀቱ በሰላም አደረሰህ {searchParams.get('to')}.   መልካም በአል እንዲሆንልህ ልባዊ ምኞቴ ነው፡፡<br /> <br /> <br />  </p>) : ""}
+                                    {relation === "feFr" ? (<p className="text-center text-3xl -mb-16"> <br /> እንኳን ለብርሃነ ጥምቀቱ በሰላም አደረሰሽ {searchParams.get('to')}. መልካም በአል እንዲሆንልሽ ልባዊ ምኞቴ ነው፡፡<br /> <br /><br /> <br />  </p>) : ""}
+                                    <div className="flex justify-center">
+
+                                        <img className="-mt-8 -mb-24 w-[50%]" src="./harmonica.png" alt="" />
+                                    </div>
 
 
 
@@ -232,16 +240,21 @@ const App = () => {
                         </div>
                         <div className="flex my-20  justify-center">
 
-                            <Link href="/" className="text-xl text-center text-black bg-[#fc7405] mr-6 rounded-lg px-1  max-w-[100px] mt-16 ">
-                                Generate new
+                            <Link href="/" className="text-xl w-10 flex justify-center m-2 h-10 w text-center text-black bg-[#fc7405] mr-6 rounded-lg px-1  max-w-[100px] mt-16 ">
+                                <svg className="h-10 " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rotate-cw"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8" /><path d="M21 3v5h-5" /></svg>
                             </Link>
-                            <div className="text-xl  bg-[#fc7405]  rounded-lg  px-1  max-w-[100px] mt-16 text-black">
-                                <button onClick={handleCopyUrl}>
+                            <button className="bg-[#fc7405] w-10 flex justify-center m-2 h-10 items-center rounded-lg  px-1  max-w-[100px] mt-16" onClick={handleCopyUrl}>
+                                <svg className="h-10 " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-share-2"><circle cx="18" cy="5" r="3" /><circle cx="6" cy="12" r="3" /><circle cx="18" cy="19" r="3" /><line x1="8.59" x2="15.42" y1="13.51" y2="17.49" /><line x1="15.41" x2="8.59" y1="6.51" y2="10.49" /></svg>
+                                {/* <img className="h-  m-2" src={share} alt="Share" /> */}
 
-                                    <img className="h-10  m-2" src={share} alt="Share" />
+                            </button>
+                            {/* <div className="text-xl  bg-[#fc7405]  rounded-lg  px-1  max-w-[100px] mt-16 text-black"> */}
+                            {/* <button onClick={handleCopyUrl}> */}
+                            {/* <svg className="h-10 " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-share-2"><circle cx="18" cy="5" r="3" /><circle cx="6" cy="12" r="3" /><circle cx="18" cy="19" r="3" /><line x1="8.59" x2="15.42" y1="13.51" y2="17.49" /><line x1="15.41" x2="8.59" y1="6.51" y2="10.49" /></svg> */}
+                            {/* <img className="h-  m-2" src={share} alt="Share" /> */}
 
-                                </button>
-                            </div>
+                            {/* </button> */}
+                            {/* </div> */}
                         </div>
                     </CardBody>
                 </Card>
