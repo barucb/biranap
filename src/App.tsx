@@ -165,7 +165,7 @@ const App = () => {
                                 }}
                                 
                                 position="bottom-center" /> */}
-                        <p>relation: {relation}</p>
+                        {/* <p>relation: {relation}</p> */}
                         <button onClick={handleValidation} className="py-3  px-10 flex w-full my-5  max-w-[500px] justify-center bg-[#fc7405] rounded-lg font-medium text-white" >Generate</button>
 
                     </div>
@@ -205,16 +205,12 @@ const App = () => {
                             <div className="relative  ">
                                 <br />
                                 <p className="font-bold text-2xl">
-                                    {relation === "maCr" ? (<p className="text-center"> ለወንድ ክረሽ  <br />ለጥምቅት 'ማይሆነኝ ቀሚሴ ይበጣጠስ <br /> ፏ ብለን እንሂድ ከከተራው ድረስ 😆🥰</p>) : ""}
-
-                                    {relation === "feCr" ? (<p className="text-center">
-                                        ለሴት ክረሽ <br />
-                                        ባልመጣ እንኳን ካንቺ በአካል ባላገኝሽ <br /> ዲጂታሉን ሎሚ በስልኬ ላኩልሽ 😆🥰</p>) : ""}
-
-                                    {relation === "bf" ? (<p className="text-center">ለቦይፍሬንድ <br /> የጥምቀቱ 'ለታ ተውበህ ላግኝህ  <br />የልቤ ላይ ንጉስ ሰርክአዲስ ነው ፍቅርህ <br /></p>) : ""}
-                                    {relation === "gf" ? (<p className="text-center">ለgirlfriend <br />የጥምቀቱ 'ለታ ነይልኝ ላግኝሽ   <br /> ሃገር ይወቅልኝ ንግስቴ እንደሆንሽ <br /> ደግሞ . . . <br /> ምንም ባትዘንጪም እንዲሁ ቆንጆ ነሽ  </p>) : ""}
-                                    {relation === "maFr" ? (<p className="text-center">lewend guadegna <br />እንኳን ለብርሃነ ጥምቀቱ በሰላም አደረሰህ {searchParams.get('from')}.  <br />መልካም በአል <br /><br /> <br />  </p>) : ""}
-                                    {relation === "feFr" ? (<p className="text-center">ለset guadegna <br />  <br /> <br /><br /> <br />  </p>) : ""}
+                                    {relation === "maCr" ? (<p className="text-center">  <br />ለጥምቅት 'ማይሆነኝ ቀሚሴ ይበጣጠስ <br /> ፏ ብለን እንሂድ ከከተራው ድረስ 😆🥰</p>) : ""}
+                                    {relation === "feCr" ? (<p className="text-center"><br />ባልመጣ እንኳን ካንቺ በአካል ባላገኝሽ <br /> ዲጂታሉን ሎሚ በስልኬ ላኩልሽ 😆🥰</p>) : ""}
+                                    {relation === "bf" ? (<p className="text-center"><br /> የጥምቀቱ 'ለታ ተውበህ ላግኝህ  <br />የልቤ ላይ ንጉስ ሰርክአዲስ ነው ፍቅርህ <br /></p>) : ""}
+                                    {relation === "gf" ? (<p className="text-center"> <br />የጥምቀቱ 'ለታ ነይልኝ ላግኝሽ   <br /> ሃገር ይወቅልኝ ንግስቴ እንደሆንሽ <br /> ደግሞ . . . <br /> ምንም ባትዘንጪም እንዲሁ ቆንጆ ነሽ  </p>) : ""}
+                                    {relation === "maFr" ? (<p className="text-center"> <br />እንኳን ለብርሃነ ጥምቀቱ በሰላም አደረሰህ {searchParams.get('from')}.  <br />መልካም በአል <br /><br /> <br />  </p>) : ""}
+                                    {relation === "feFr" ? (<p className="text-center"> <br /> እንኳን ለብርሃነ ጥምቀቱ በሰላም አደረሰሽ {searchParams.get('from')}.<br /> <br /><br /> <br />  </p>) : ""}
 
 
 
