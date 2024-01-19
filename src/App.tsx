@@ -105,7 +105,7 @@ const App = () => {
                         <h5 className="pt-4  text-xl">{gender === "female" ? "ተቀባይዋ " : "ተቀባዩ "} የእርሶ ምንድን {gender === "female" ? "ናት " : "ነው "}?</h5>
                         <h5 className="py-1  text-m">The Receiver is your . . .</h5>
 
-                        <div className=" max-w-[500px] grid grid-cols-2 gap-3 ">
+                        <div className=" max-w-[500px] grid mb-36 grid-cols-2 gap-3 ">
                             <button className={`${gender === "male" ? "block" : "hidden"} px-4 py-2 rounded-md ${relation === "maCr" ? "bg-[#fc7405]  text-white" : "bg-gray-200 "}`} onClick={() => { setRelation("maCr"); handleUpdateUrl("maCr"); }}>
                                 የምወደው ልጅ 🥰
                             </button>
