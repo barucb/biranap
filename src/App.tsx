@@ -1,7 +1,6 @@
 
 import { Input, Card, CardHeader, Divider, CardBody, Link } from "@nextui-org/react"
 import { useSearchParams } from 'react-router-dom';
-import share from './assets/share.svg'
 import { ChangeEvent, useEffect, useState } from "react";
 import toast from "react-hot-toast";
 
@@ -241,10 +240,10 @@ const App = () => {
                         <div className="flex my-20  justify-center">
 
                             <Link href="/" className="text-xl w-10 flex justify-center m-2 h-10 w text-center text-black bg-[#fc7405] mr-6 rounded-lg px-1  max-w-[100px] mt-16 ">
-                                <svg className="h-10 " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rotate-cw"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8" /><path d="M21 3v5h-5" /></svg>
+                                <svg className="h-10 " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8" /><path d="M21 3v5h-5" /></svg>
                             </Link>
                             <button className="bg-[#fc7405] w-10 flex justify-center m-2 h-10 items-center rounded-lg  px-1  max-w-[100px] mt-16" onClick={handleCopyUrl}>
-                                <svg className="h-10 " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-share-2"><circle cx="18" cy="5" r="3" /><circle cx="6" cy="12" r="3" /><circle cx="18" cy="19" r="3" /><line x1="8.59" x2="15.42" y1="13.51" y2="17.49" /><line x1="15.41" x2="8.59" y1="6.51" y2="10.49" /></svg>
+                                <svg className="h-10 " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><circle cx="18" cy="5" r="3" /><circle cx="6" cy="12" r="3" /><circle cx="18" cy="19" r="3" /><line x1="8.59" x2="15.42" y1="13.51" y2="17.49" /><line x1="15.41" x2="8.59" y1="6.51" y2="10.49" /></svg>
                                 {/* <img className="h-  m-2" src={share} alt="Share" /> */}
 
                             </button>
