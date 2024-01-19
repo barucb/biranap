@@ -238,7 +238,7 @@ const App = () => {
                         </div>
                         <div className="flex  justify-center">
 
-                            <Link href="/" className="text-xl w-16  flex justify-center m-2 h-16 w text-center text-black bg-[#fc7405] mr-6 rounded-lg px-1  max-w-[100px] mt-16 ">
+                            <Link href="/" className="text-xl w-16  flex justify-center m-2 h-16 w text-center text-black bg-gradient-to-l from-lime-500 to-yellow-400 mr-6 rounded-lg px-1  max-w-[100px] mt-16 ">
                                 አዲስ ይዘዙ
                             </Link>
                             <button className="bg-[#fc7405] w-16 flex justify-center m-2 h-16 items-center rounded-lg  px-1  max-w-[100px] mt-16" onClick={handleCopyUrl}>
