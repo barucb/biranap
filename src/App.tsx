@@ -232,7 +232,6 @@ const App = () => {
 
                   {" "}
                   {relation} */}
-
                                     {/* <p className="capitalize">ከ {" "} {searchParams.get('from')}</p> */}
                                 </p>
                             </div>
