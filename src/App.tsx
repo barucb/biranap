@@ -236,7 +236,7 @@ const App = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="flex  justify-center">
+                        <div className="flex mb-20  justify-center">
 
                             <Link href="/" className="text-lg w-14  flex justify-center m-2 h-14 w text-center text-black bg-gradient-to-l from-lime-500 to-yellow-400 mr-6 rounded-lg px-1  max-w-[100px] mt-16 ">
                                 አዲስ ይዘዙ
